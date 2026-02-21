@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giris ve Kayit Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="register-form">
+            <h2>Kayit Ol</h2>
+            <input type="text" id="reg-username" placeholder="Kullanici Adi">
+            <input type="email" id="reg-email" placeholder="E-posta">
+            <input type="password" id="reg-password" placeholder="Sifre">
+            <button onclick="kayitOl()">Hesap Olustur</button>
+            <p>Zaten hesabiniz var mi? <a href="#" onclick="formDegistir()">Giris Yap</a></p>
+
+        </div>
+
+        <div id="login-form" style="display: none;">
+            <h2>Giris Yap</h2>
+            <input type="email" id="login-email" placeholder="E-posta">
+            <input type="password" id="login-password" placeholder="Sifre">
+            <button onclick="girisYap()">Giris Yap</button>
+            <p>Hesabiniz yok mu? <a href="#" onclick="formDegistir()">Kayit Ol</a></p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
